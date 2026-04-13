@@ -12,7 +12,7 @@ function Header() {
     <>
       <header className="absolute top-0 left-0 w-full z-50 bg-white/5 backdrop-blur border-white/10 fixed">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          
+
           {/* Left Side */}
           <a href="#/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-3 group">
             <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] overflow-hidden rounded-full border border-transparent group-hover:border-[#E63E21]/30 transition-colors">
@@ -25,7 +25,7 @@ function Header() {
 
             <div className="flex flex-col leading-none">
               <span className="text-[#E9E9E7] text-lg sm:text-xl font-medium tracking-wide group-hover:text-white transition-colors">
-                EHTISHAM
+                EHTISHAM....
               </span>
               <span className="text-[#E63E21] text-lg sm:text-xl font-medium tracking-wide">
                 MALIK.
@@ -57,8 +57,8 @@ function Header() {
 
           {/* Mobile Hamburger Button */}
           <div className="md:hidden flex items-center">
-            <button 
-              onClick={toggleMobileMenu} 
+            <button
+              onClick={toggleMobileMenu}
               className="text-[#E9E9E7] hover:text-white focus:outline-none transition-colors"
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -71,10 +71,9 @@ function Header() {
       </header>
 
       {/* Mobile Menu Sidebar Overlay */}
-      <div 
-        className={`fixed inset-0 z-[60] bg-[#0D0D0D] transition-transform duration-500 ease-in-out md:hidden flex flex-col ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+      <div
+        className={`fixed inset-0 z-[60] bg-[#0D0D0D] transition-transform duration-500 ease-in-out md:hidden flex flex-col ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="w-full flex justify-between items-center p-6">
           {/* Mobile Sidebar Logo */}
@@ -103,18 +102,18 @@ function Header() {
             </svg>
           </button>
         </div>
-        
+
         <div className="flex-grow flex flex-col items-center justify-center space-y-10 text-3xl font-bold tracking-widest uppercase">
           <a href="#/" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="text-[#E9E9E7] hover:text-[#E63E21] hover:scale-110 transition-all duration-300">HOME</a>
           <a href="#/about" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="text-[#E9E9E7] hover:text-[#E63E21] hover:scale-110 transition-all duration-300">ABOUT</a>
           <a href="#/projects" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="text-[#E9E9E7] hover:text-[#E63E21] hover:scale-110 transition-all duration-300">WORKS</a>
           <a href="#/blog" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="text-[#E9E9E7] hover:text-[#E63E21] hover:scale-110 transition-all duration-300">BLOG</a>
         </div>
-        
+
         {/* Footer info in mobile menu */}
         <div className="p-8 text-center border-t border-gray-800 text-sm text-gray-500 font-medium">
-            <p>EHTISHAM MALIK</p>
-            <p className="mt-2 text-[#E63E21]">Based in Islamabad</p>
+          <p>EHTISHAM MALIK</p>
+          <p className="mt-2 text-[#E63E21]">Based in Islamabad</p>
         </div>
       </div>
     </>
