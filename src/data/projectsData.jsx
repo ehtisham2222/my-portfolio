@@ -1,0 +1,80 @@
+export const projectsData = [
+  {
+    id: "university-web",
+    title: "University Information Web",
+    description: "A comprehensive university information website providing details on courses, admissions, faculty, and campus life, designed with an intuitive user interface.",
+    longDescription: "The University Information Web platform was engineered from the ground up to serve as the central digital hub for prospective students, current faculty, and alumni. The primary objective was to consolidate fragmented departmental websites into a single, cohesive, and modern interface.\n\nThe application features a dynamic course catalog, an interactive campus map, and a streamlined admissions portal that reduces application friction. We prioritized accessibility and extremely fast load times, ensuring that users from any demographic or geographical location could seamlessly access vital educational resources.",
+    challenges: "One of the most significant challenges was integrating legacy database systems containing decades of student and faculty records into a modern REST API without experiencing downtime.\n\nWe solved this by developing a custom middleware layer that periodically synced the legacy databases with our new MongoDB clusters, allowing the frontend to quickly fetch up-to-date information without straining the older infrastructure. Additionally, we implemented aggressive caching strategies using Redis to handle the massive traffic spikes during enrollment periods.",
+    role: "Lead Full Stack Developer",
+    timeline: "12 Weeks",
+    platform: "Web Platform",
+    date: "Dec 10, 2023",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1000", 
+    link: "https://example.com/university"
+  },
+  {
+    id: "ai-weapon-detection",
+    title: "AI Weapon Detection System",
+    description: "An advanced artificial intelligence system built to detect weapons in real-time video streams, enhancing security and safety measures.",
+    longDescription: "In an era where security is paramount, the AI Weapon Detection System was conceptualized physical security measures using cutting-edge computer vision. This system integrates directly with existing CCTV infrastructure to provide real-time analysis of video feeds.\n\nUtilizing a custom-trained YOLOv8 (You Only Look Once) object detection model, the system is capable of identifying various types of firearms and bladed weapons with a 98.4% accuracy rate in under 15 milliseconds per frame. Upon detection, it automatically triggers silent alarms, locks designated endpoints, and alerts security personnel with bounding-box highlighted snapshots.",
+    challenges: "The most difficult hurdle was minimizing 'false positives'—such as umbrellas, cell phones, or power drills—while maintaining high operational speed on edge devices.\n\nTo overcome this, we collected and annotated a massive proprietary dataset containing thousands of edge-case scenarios under varying lighting conditions. We also optimized the model using TensorRT to ensure it could run effectively on localized NVIDIA Jetson modules without requiring a continuous cloud connection, preserving both speed and privacy.",
+    role: "AI / Backend Developer",
+    timeline: "16 Weeks",
+    platform: "Edge / Web Dashboard",
+    date: "Aug 15, 2025",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000",
+    link: "https://example.com/weapon-detection"
+  },
+  {
+    id: "react-auth-sys",
+    title: "React Login Authentication System",
+    description: "A secure and robust user authentication system built with React for the frontend and Node.js/Express for the backend logic.",
+    longDescription: "This project serves as a highly modular, enterprise-grade authentication boilerplate designed to be dropped into any MERN stack application. It handles the entire lifecycle of user identity management, from initial registration and email verification to secure login, role-based access control, and password resets.\n\nThe frontend is built using React and Context API to seamlessly share the authentication state across protected routes. The backend utilizes Node.js and Express to securely hash passwords with bcrypt, issue and validate JSON Web Tokens (JWT), and manage HTTP-only secure cookies to prevent XSS attacks.",
+    challenges: "A common vulnerability in SPA (Single Page Application) authentication is token theft. Managing the balance between user convenience (staying logged in) and strict security was paramount.\n\nThe solution was implementing a dual-token architecture: short-lived Access Tokens and long-lived Refresh Tokens. Access tokens are kept purely in memory, while refresh tokens are stored in strict HTTP-only cookies. Complete token rotation was also implemented so that every time a refresh token is used, a new one is issued, immediately invalidating compromised sessions.",
+    role: "Full Stack Developer",
+    timeline: "4 Weeks",
+    platform: "Web Application",
+    date: "Mar 05, 2026",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
+    link: "https://example.com/auth"
+  },
+  {
+    id: "fish-cottage",
+    title: "Fish Cottage Management System",
+    description: "A complete management system built with MySQL to handle reservations, inventory, and customer data for the Fish Cottage.",
+    longDescription: "The Fish Cottage required a digital transformation from their traditional pen-and-paper booking method to a centralized digital management system. This project delivered a comprehensive CRM and inventory management tool tailored specifically for hospitality and restaurant needs.\n\nIt features an intuitive dashboard that tracks daily reservations, total revenue, and inventory alerts. The database architecture is highly robust, utilizing complex SQL joins to generate real-time reports on the most popular timeslots, frequent customers, and seasonal inventory depletion rates.",
+    challenges: "The primary challenge was designing a database schema that was flexible enough to handle complex, overlapping bookings, cancellations, and variable party sizes without creating booking conflicts or infinite loops.\n\nI utilized strict MySQL transactions with row-level locking (InnoDB) to ensure data integrity during simultaneous booking attempts. Additionally, normalized the database completely to the 3rd Normal Form (3NF) to eliminate data redundancy, significantly speeding up complex reporting queries.",
+    role: "Database Architect / Developer",
+    timeline: "6 Weeks",
+    platform: "Desktop / Web",
+    date: "Oct 22, 2024",
+    image: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&q=80&w=1000",
+    link: "https://example.com/fish"
+  },
+  {
+    id: "quiz-app-java",
+    title: "Quiz Application",
+    description: "An interactive quiz application developed using Java, featuring multiple categories, scoring, and user management.",
+    longDescription: "Developed entirely in Java, this Quiz Application is a lightweight but powerful desktop software designed for educational environments. It allows administrators to securely create, edit, and categorize multiple-choice questions while providing students with an engaging interface to take exams.\n\nThe application includes a randomized question generator, strict timed sessions, and an automated grading system that instantly generates performance reports and saves them to a local student profile. It was built using Java Swing for the graphical interface and extensive Object-Oriented Programming (OOP) principles for the underlying logic.",
+    challenges: "Ensuring that the exam timer remained perfectly synchronized and secure, even if the application lagged or the computer went to sleep, was an unexpected technical hurdle.\n\nTo solve this, I decoupled the timer logic from the main UI thread using Java's multithreading capabilities. I implemented a robust background worker thread that calculated the time delta against a fixed UNIX timestamp rather than just decrementing a counter, ensuring that the remaining time was always unconditionally accurate regardless of system performance.",
+    role: "Software Engineer",
+    timeline: "5 Weeks",
+    platform: "Java Desktop App",
+    date: "Jan 18, 2023",
+    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=1000",
+    link: "https://example.com/quiz"
+  },
+  {
+    id: "acenda-travel",
+    title: "Acenda Travel Page",
+    description: "A stunning, responsive travel landing page built with React, featuring dynamic animations and a custom search component.",
+    longDescription: "Acenda Travel is a front-end showcase project demonstrating advanced UI/UX design capabilities and modern web animation techniques. The landing page acts as a conceptual portal for a luxury travel agency.\n\nIt features extremely smooth, physics-based scroll animations, beautiful hover states, and a fully interactive, complex search booking component that handles dates, locations, and guest counts. Great care was taken to ensure the design was flawlessly responsive, providing an app-like navigation experience on mobile devices while maintaining its cinematic appeal on desktop screens.",
+    challenges: "Achieving a consistent 60 Frames Per Second (FPS) while rendering complex parallax scrolling effects and multiple high-resolution assets simultaneously on mobile devices.\n\nI tackled this by utilizing Framer Motion for hardware-accelerated animations, completely offloading the visual transformations to the GPU. I also aggressively implemented React lazy loading for off-screen components and used modern WEBP image formats, driving the First Contentful Paint (FCP) time under a single second.",
+    role: "Frontend Developer / UI Designer",
+    timeline: "3 Weeks",
+    platform: "Web Application",
+    date: "Mar 28, 2026",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1000",
+    link: "https://example.com/acenda"
+  }
+];
