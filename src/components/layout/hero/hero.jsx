@@ -34,9 +34,18 @@ function Hero() {
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 sm:gap-12">
               <div className="flex items-center gap-6 sm:gap-8 text-[#E9E9E7] text-xs sm:text-sm font-medium tracking-widest uppercase">
-                <a href="#" className="hover:text-[#E63E21] hover:underline underline-offset-4 transition-colors duration-300">Github</a>
-                <a href="#" className="hover:text-[#E63E21] hover:underline underline-offset-4 transition-colors duration-300">Linkedin</a>
-                <a href="#" className="hover:text-[#E63E21] hover:underline underline-offset-4 transition-colors duration-300">Instagram</a>
+                <a href="https://github.com/ehtisham2222"
+                  target="_blank"
+                  rel='noopener noreferrer'
+                  className="hover:text-[#E63E21] hover:underline underline-offset-4 transition-colors duration-300">Github</a>
+                <a href="https://www.linkedin.com/in/ehtisham-malik-6774512b6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank"
+                  rel='noopener noreferrer'
+                  className="hover:text-[#E63E21] hover:underline underline-offset-4 transition-colors duration-300">Linkedin</a>
+                <a href="https://www.instagram.com/_whoisehtishambtw?igsh=MWp2OXh4aDJuZXBuMg%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel='noopener noreferrer'
+                  className="hover:text-[#E63E21] hover:underline underline-offset-4 transition-colors duration-300">Instagram</a>
               </div>
 
               <a href="#" className="border border-white/20 text-[#E9E9E7] px-6 py-2 rounded-full text-sm font-medium hover:bg-white/10 hover:border-white/40 transition-colors flex items-center gap-2 uppercase tracking-wider">

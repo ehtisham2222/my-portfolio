@@ -41,9 +41,10 @@ function Footer() {
 
                     {/* Social Links */}
                     <div className="flex gap-6 text-sm font-medium tracking-wider uppercase text-gray-400">
-                        <a href="#" className="hover:text-[#E63E21] hover:underline transition-colors">Github</a>
-                        <a href="#" className="hover:text-[#E63E21] hover:underline transition-colors">Linkedin</a>
-                        <a href="#" className="hover:text-[#E63E21] hover:underline transition-colors">Instagram</a>
+                        <a href="https://github.com/ehtisham2222" target="_blank"
+                            rel="noopener noreferrer" className="hover:text-[#E63E21] hover:underline transition-colors">Github</a>
+                        <a href="https://www.linkedin.com/in/ehtisham-malik-6774512b6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="hover:text-[#E63E21] hover:underline transition-colors">Linkedin</a>
+                        <a href="https://www.instagram.com/_whoisehtishambtw?igsh=MWp2OXh4aDJuZXBuMg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-[#E63E21] hover:underline transition-colors">Instagram</a>
                     </div>
 
                 </div>

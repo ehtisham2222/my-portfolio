@@ -76,7 +76,27 @@ function Header() {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="w-full flex justify-end p-6">
+        <div className="w-full flex justify-between items-center p-6">
+          {/* Mobile Sidebar Logo */}
+          <a href="#/" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="flex items-center gap-3">
+            <div className="w-[45px] h-[45px] overflow-hidden rounded-full">
+              <img
+                src={logo}
+                alt="profile"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="flex flex-col leading-none">
+              <span className="text-[#E9E9E7] text-lg font-medium tracking-wide">
+                EHTISHAM
+              </span>
+              <span className="text-[#E63E21] text-lg font-medium tracking-wide">
+                MALIK.
+              </span>
+            </div>
+          </a>
+
+          {/* Close Button */}
           <button onClick={toggleMobileMenu} className="text-gray-400 hover:text-white transition-colors focus:outline-none">
             <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
