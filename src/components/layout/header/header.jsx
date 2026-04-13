@@ -25,7 +25,7 @@ function Header() {
 
             <div className="flex flex-col leading-none">
               <span className="text-[#E9E9E7] text-lg sm:text-xl font-medium tracking-wide group-hover:text-white transition-colors">
-                EHTISHAM....
+                EHTISHAM
               </span>
               <span className="text-[#E63E21] text-lg sm:text-xl font-medium tracking-wide">
                 MALIK.
