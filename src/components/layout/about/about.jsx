@@ -23,8 +23,8 @@ function About() {
               I'm Ehtisham Malik, a passionate Full Stack Developer specializing in the MERN stack currently based in Islamabad, Pakistan. With a deep focus on innovation and clean architecture, I thrive on turning complex problems into seamless, scalable web experiences. Explore my portfolio and join me on a journey where efficient code meets intuitive design to tell compelling digital stories. Let's bring your vision to life!
             </p>
             <div className="pt-4">
-              <a href="#" className="inline-flex items-center gap-2 border border-black/40 rounded-full px-7 py-2.5 text-sm font-medium hover:bg-[#E63E21] hover:text-white transition-colors uppercase tracking-wider hover:border-[#E63E21]">
-                More About Me <span className="text-xl leading-none font-light">&#x2197;</span>
+              <a href="#" className="group inline-flex items-center gap-2 border border-black/40 rounded-full px-7 py-2.5 text-sm font-medium hover:bg-[#E63E21] hover:text-white transition-colors uppercase tracking-wider hover:border-[#E63E21]">
+                More About Me <span className="text-xl leading-none font-light inline-block transition-transform duration-300 group-hover:rotate-45 group-active:rotate-45">&#x2197;</span>
               </a>
             </div>
           </div>

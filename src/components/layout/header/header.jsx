@@ -15,7 +15,7 @@ function Header() {
 
           {/* Left Side */}
           <a href="#/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-3 group">
-            <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] overflow-hidden rounded-full border border-transparent group-hover:border-[#E63E21]/30 transition-colors">
+            <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] overflow-hidden rounded-full border border-transparent transition-colors">
               <img
                 src={logo}
                 alt="profile"
@@ -103,7 +103,7 @@ function Header() {
           </button>
         </div>
 
-        <div className="flex-grow flex flex-col items-center justify-center space-y-10 text-3xl font-bold tracking-widest uppercase">
+        <div className="flex-grow flex flex-col items-center justify-center space-y-10 text-[18px] font-bold tracking-widest uppercase">
           <a href="#/" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="text-[#E9E9E7] hover:text-[#E63E21] hover:scale-110 transition-all duration-300">HOME</a>
           <a href="#/about" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="text-[#E9E9E7] hover:text-[#E63E21] hover:scale-110 transition-all duration-300">ABOUT</a>
           <a href="#/projects" onClick={() => { window.scrollTo(0, 0); toggleMobileMenu(); }} className="text-[#E9E9E7] hover:text-[#E63E21] hover:scale-110 transition-all duration-300">WORKS</a>

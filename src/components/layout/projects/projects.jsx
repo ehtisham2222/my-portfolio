@@ -41,9 +41,9 @@ function Projects() {
 
                 {/* About Project Button */}
                 <div className="hidden lg:block mt-auto">
-                  <a href={`#/projects/${project.id}`} className="inline-flex items-center gap-2 border border-gray-600 rounded-full px-5 py-2 text-xs uppercase tracking-wider hover:bg-[#E63E21] hover:text-white hover:border-[#E63E21] transition-all duration-300">
+                  <a href={`#/projects/${project.id}`} className="group inline-flex items-center gap-2 border border-gray-600 rounded-full px-5 py-2 text-xs uppercase tracking-wider hover:bg-[#E63E21] hover:text-white hover:border-[#E63E21] transition-all duration-300">
                     About Project
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="transition-transform duration-300 -rotate-45 group-hover:rotate-0 group-active:rotate-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>
@@ -65,9 +65,9 @@ function Projects() {
 
               {/* Mobile About Project Button (Shows below image on small screens) */}
               <div className="lg:hidden mt-4">
-                <a href={`#/projects/${project.id}`} className="inline-flex items-center gap-2 border border-gray-600 rounded-full px-5 py-2 text-xs uppercase tracking-wider hover:bg-[#E63E21] hover:text-white hover:border-[#E63E21] transition-all">
+                <a href={`#/projects/${project.id}`} className="group inline-flex items-center gap-2 border border-gray-600 rounded-full px-5 py-2 text-xs uppercase tracking-wider hover:bg-[#E63E21] hover:text-white hover:border-[#E63E21] transition-all">
                   About Project
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="transition-transform duration-300 -rotate-45 group-hover:rotate-0 group-active:rotate-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>

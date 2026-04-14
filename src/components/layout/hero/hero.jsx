@@ -48,8 +48,8 @@ function Hero() {
                   className="hover:text-[#E63E21] hover:underline underline-offset-4 transition-colors duration-300">Instagram</a>
               </div>
 
-              <a href="#" className="border border-white/20 text-[#E9E9E7] px-6 py-2 rounded-full text-sm font-medium hover:bg-white/10 hover:border-white/40 transition-colors flex items-center gap-2 uppercase tracking-wider">
-                Let's Talk <span className="text-xl leading-none font-light">&#x2197;</span>
+              <a href="#" className="group border border-white/20 text-[#E9E9E7] px-6 py-2 rounded-full text-sm font-medium hover:bg-[#E63E21] hover:border-white/40 transition-colors flex items-center gap-2 uppercase tracking-wider">
+                Let's Talk <span className="text-xl leading-none font-light inline-block transition-transform duration-300 group-hover:rotate-45 group-active:rotate-45">&#x2197;</span>
               </a>
             </div>
 

@@ -7,13 +7,13 @@ function Footer() {
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Top Section */}
-                <div className="mb-16">
+                <div className="mb-16 flex flex-col items-start text-left">
                     <p className="text-gray-400 text-base md:text-lg mb-2">Have an idea?</p>
-                    <h2 className="text-3xl md:text-4xl font-medium mb-12">Let's rock with me</h2>
+                    <h2 className="text-3xl md:text-4xl font-medium mb-5">Let's rock with me</h2>
 
                     {/* Big Contact Me Text */}
-                    <div className="w-full border-b border-gray-800 pb-10">
-                        <a href="#" className="text-6xl sm:text-7xl md:text-8xl lg:text-[110px] font-bold tracking-tight hover:text-white text-gray-200 transition-colors inline-block">
+                    <div className="w-full border-b border-gray-800 pb-10 text-left">
+                        <a href="#" className="cursor-default text-6xl sm:text-7xl md:text-8xl lg:text-[110px] font-bold tracking-tight hover:text-white text-gray-200 transition-colors inline-block">
                             Contact Me
                         </a>
                     </div>
@@ -23,7 +23,7 @@ function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
 
                     {/* Profile */}
-                    <div className="flex items-center gap-3">
+                    <a href="#/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-3">
                         <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
                             <img src={profileImg} alt="Ehtisham Malik" className="w-full h-full object-cover object-top" />
                         </div>
@@ -31,7 +31,7 @@ function Footer() {
                             <span className="text-[#E9E9E7] text-lg font-medium tracking-wide">EHTISHAM</span>
                             <span className="text-[#E63E21] text-lg font-medium tracking-wide">MALIK.</span>
                         </div>
-                    </div>
+                    </a>
 
                     {/* Location */}
                     <div className="text-left md:text-center">
